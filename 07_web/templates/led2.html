@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- <scipt async src="..\static\js\led2.js"></scipt> -->
+  
+  <title>Document</title>
+</head>
+
+<body>
+
+  <h1>LED ON/OFF</h1>
+
+  <button onclick="led_op(0, 1)">RED LED ON</button> <br>
+  <button onclick="led_op(0, 0)">RED LED OFF</button> <br>
+  <button onclick="led_op(1, 1)">BLUE LED ON</button> <br>
+  <button onclick="led_op(1, 0)">BLUE LED OFF</button> <br>
+
+  <h1 id="result">
+
+  </h1>
+
+  <script>
+    const led_list = ["red", "blue"];
+    const state = ["off", "on"];
+
+    function led_op(led, op) {
+      let url = "/led/".concat(led_list[led], "/", state[op]);
+      fetch(url)
+      .then(response=>response.text())
+      .then(data=> {
+        let result = document.querySelector("#result");
+        result.innerHTML = data;
+      });
+    }
+  </script>
+</body>
+</html>
