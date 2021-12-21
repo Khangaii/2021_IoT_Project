@@ -1,2 +1,110 @@
 # 2021_IoT_Project
 2021 - 1st year IoT class code.
+
+## Directories
+- 01_gpio_digital
+  - led_blink.c
+  - led_blink.py
+  - led_blink_input.py
+  - led_blink_task.c
+  - led_blink_task.py
+  - switch.py
+  - switch_led.py
+  - switch_led_task.py
+  - switch_pud.py
+- 02_gpio_pwm
+  - led_fade.py
+  - piezo_buzzer.py
+  - piezo_buzzer2.py
+  - piezo_buzzer_task.py
+  - servo_motor.py
+- 03_high_level_sensor
+  - 7segment.py
+  - dht11.py
+  - pir.py
+  - pir_led.py
+  - ultra_sonic.py
+  - ultra_sonic_led.py
+- 04_display
+  - 4digit.py
+  - 4digit_task.py
+  - 7segment.py
+  - 7segment_counter.py
+  - 7segment_task.py
+- 05_communication
+  - LDR.py
+  - LDR_task.py
+  - OLED.py
+  - dot_matrix.py
+  - dot_matrix_task.py
+  - i2c_lcd.py
+  - i2c_lcd_task.py
+  - matrix_demo.py
+  - potentiometer.py
+- 06_multimedia
+  - dnn_face_detection_camera.py
+  - dnn_face_detection_image.py
+  - dnn_image_classification.py
+  - opencv_camera.py
+  - opencv_camera_out.py
+  - opencv_camera_task.py
+  - opencv_eye_detection.py
+  - opencv_face_detection.py
+  - opencv_face_detection_task.py
+  - opencv_image.py
+  - opencv_image_gray.py
+  - picamera_task.py
+  - picamera_test.py
+  - pyaudio.recording.py
+  - pyaudio_play.py
+  - pygame_play.py
+- 07_web
+  - static
+    - css(empty)
+    - images(empty)
+    - js
+      - led.js
+      - led2.js
+  - templates
+    - dht11.html
+    - first.html
+    - hello.html
+    - led.html
+    - led2.html
+    - second.html
+  - flask_dht11.py
+  - flask_hello.py
+  - flask_hello2.py
+  - flask_led.py
+  - flask_led2.py
+  - flask_led_task.py
+  - flask_led_task2.py
+- image_editor
+  - static
+    - css
+      - AeroJet-505.css
+      - Hackytoberfest.css
+      - MonoMinimal.css
+      - image_editor.css
+    - images(empty)
+    - js
+      - image_editor.js
+  - templates
+    - image_editor.html
+  - ver
+    - ver 0
+      - image_editor.html
+      - image_editor.py
+    - ver 1
+      - image_editor.html
+      - image_editor.py
+    - ver 2
+      - image_editor.html
+      - image_editor.py
+    - ver 3
+      - image_editor.html
+      - image_editor.py
+  - image_editor.py
+- project
+  - morse_code.py
+  
